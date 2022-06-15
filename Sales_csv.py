@@ -18,6 +18,7 @@ print(df.columns)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 app.layout = dbc.Container([
     html.H1("Interactive sales dashboard",  style={'textAlign':'center'}),
 
